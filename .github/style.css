@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.map {
+  margin: 20px auto;
+  width: 300px;
+  height: 200px;
+  background: #ddd;
+  padding: 10px;
+}
+
+.knight {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+}
+
+.green { background: green; }
+.yellow { background: orange; }
+.red { background: red; }
+
+.hidden {
+  display: none;
+}
+
+#loginArea {
+  margin-top: 100px;
+}
+
+#loginArea input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 200px;
+}
+
+.stats {
+  background: white;
+  margin: 20px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+}

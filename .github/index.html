@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>9952 線上點餐系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="loginArea">
+  <h2>登入 9952</h2>
+  <input type="text" id="nickname" placeholder="暱稱" />
+  <input type="text" id="slogan" placeholder="一句小標語" />
+  <button onclick="login()">進入 9952</button>
+</div>
+
+<div id="mainArea" class="hidden">
+
+  <h1 class="title">9952</h1>
+  <p class="subtitle">校園即時點餐媒合平台</p>
+
+  <p id="userInfo"></p>
+
+  <div class="role-select">
+    <button onclick="selectRole('hungry')">我是飢餓者</button>
+    <button onclick="selectRole('knight')">我是騎士</button>
+  </div>
+
+  <div class="stats">
+    <h3>本月身分比例</h3>
+    <p id="ratioText">尚無資料</p>
+  </div>
+
+  <div class="map">
+    <p>📍 即時地圖（示意）</p>
+    <div class="knight green">騎士 A</div>
+    <div class="knight yellow">騎士 B</div>
+    <div class="knight red">騎士 C</div>
+  </div>
+
+  <div id="orderArea" class="hidden">
+    <h2>我要點餐</h2>
+    <input type="text" id="food" placeholder="想吃什麼？" />
+    <button onclick="sendOrder()">送出訂單</button>
+    <p id="orderResult"></p>
+  </div>
+
+  <div id="knightArea" class="hidden">
+    <h2>我的狀態</h2>
+    <button onclick="setStatus('green')">🟢 方便</button>
+    <button onclick="setStatus('yellow')">🟡 稍後</button>
+    <button onclick="setStatus('red')">🔴 不方便</button>
+    <p id="statusText"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
